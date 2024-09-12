@@ -8,6 +8,7 @@ use Laminas\ModuleManager\Feature\InitProviderInterface;
 use Laminas\ModuleManager\ModuleManagerInterface;
 use stdClass;
 
+/** @psalm-suppress UnusedClass */
 class Module implements InitProviderInterface
 {
     public function getConfig(): array
