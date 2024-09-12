@@ -6,7 +6,6 @@ namespace Qux;
 
 use Laminas\ModuleManager\Feature\InitProviderInterface;
 use Laminas\ModuleManager\ModuleManagerInterface;
-use Psr\Container\ContainerInterface;
 use stdClass;
 
 class Module implements InitProviderInterface
@@ -16,7 +15,7 @@ class Module implements InitProviderInterface
         return [
             'service_manager' => [
                 'factories' => [
-                    'QuxObject' => static fn(ContainerInterface $sm): stdClass => new stdClass(),
+                    'QuxObject' => static fn(): stdClass => new stdClass(),
                 ],
             ],
         ];

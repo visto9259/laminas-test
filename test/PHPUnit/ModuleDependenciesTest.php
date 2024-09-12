@@ -21,8 +21,8 @@ class ModuleDependenciesTest extends AbstractHttpControllerTestCase
             include __DIR__ . '/../_files/application.config.with.dependencies.php'
         );
         $sm = $this->getApplicationServiceLocator();
-        $this->assertEquals(true, $sm->has('FooObject'));
-        $this->assertEquals(true, $sm->has('BarObject'));
+        $this->assertTrue($sm->has('FooObject'));
+        $this->assertTrue($sm->has('BarObject'));
 
         $this->assertModulesLoaded(['Foo', 'Bar']);
         $this->expectedException(ExpectationFailedException::class);
@@ -35,8 +35,8 @@ class ModuleDependenciesTest extends AbstractHttpControllerTestCase
             include __DIR__ . '/../_files/application.config.with.dependencies.disabled.php'
         );
         $sm = $this->getApplicationServiceLocator();
-        $this->assertEquals(false, $sm->has('FooObject'));
-        $this->assertEquals(true, $sm->has('BarObject'));
+        $this->assertFalse($sm->has('FooObject'));
+        $this->assertTrue($sm->has('BarObject'));
 
         $this->assertNotModulesLoaded(['Foo']);
         $this->expectedException(ExpectationFailedException::class);
@@ -44,7 +44,7 @@ class ModuleDependenciesTest extends AbstractHttpControllerTestCase
     }
 
     /**
-     * Test that 'assertModulesLoaded()' can detect modules are loaded in a module's init() method
+     * Test that 'assertModulesLoaded()' can detect modules that are loaded in a module's init() method
      */
     public function testLoadedModulesUsingModuleInit(): void
     {
@@ -54,10 +54,10 @@ class ModuleDependenciesTest extends AbstractHttpControllerTestCase
         $sm = $this->getApplicationServiceLocator();
 
         // Check that modules loaded and created the below services
-        $this->assertEquals(true, $sm->has('FooObject'));
-        $this->assertEquals(true, $sm->has('QuxObject'));
+        $this->assertTrue($sm->has('FooObject'));
+        $this->assertTrue($sm->has('QuxObject'));
 
-        // Assert the loaded modules assertion
+        // Assert for the module loaded via Module init() method
         $this->assertModulesLoaded(['Foo']);
     }
 }
