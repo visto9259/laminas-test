@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.19.0@06b71be009a6bd6d81b9811855d6629b9fe90e1b">
+<files psalm-version="5.16.0@2897ba636551a8cb61601cc26f6ccfbba6c36591">
   <file src="src/PHPUnit/Constraint/IsCurrentModuleNameConstraint.php">
     <PossiblyFalseArgument>
       <code><![CDATA[strrpos($appModules, '\\')]]></code>
     </PossiblyFalseArgument>
   </file>
   <file src="src/PHPUnit/Constraint/LaminasConstraint.php">
-    <InternalClass/>
     <InternalMethod>
       <code>getComparisonFailure</code>
     </InternalMethod>
@@ -52,20 +51,6 @@
       <code>createFailureMessage</code>
       <code>createFailureMessage</code>
     </DeprecatedMethod>
-    <InternalClass>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-    </InternalClass>
-    <InternalMethod>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-    </InternalMethod>
     <LessSpecificReturnStatement>
       <code><![CDATA[$this->getApplication()->getServiceManager()]]></code>
     </LessSpecificReturnStatement>
@@ -81,7 +66,6 @@
       <code>$match</code>
       <code>$match</code>
       <code>$method</code>
-      <code>$modulesLoaded</code>
       <code>$modulesLoaded</code>
       <code>$post</code>
       <code>$query</code>
@@ -103,8 +87,6 @@
       <code>$match</code>
       <code>$method</code>
       <code>$moduleManager</code>
-      <code>$moduleManager</code>
-      <code>$modulesLoaded</code>
       <code>$modulesLoaded</code>
       <code>$post</code>
       <code>$query</code>
@@ -121,7 +103,6 @@
       <code>detach</code>
       <code>getError</code>
       <code>getMatchedRouteName</code>
-      <code>getModules</code>
       <code>getModules</code>
       <code>getParam</code>
       <code>getParam</code>
@@ -237,8 +218,6 @@
       <code>createFailureMessage</code>
       <code>createFailureMessage</code>
     </DeprecatedMethod>
-    <InternalClass/>
-    <InternalMethod/>
     <InvalidReturnStatement>
       <code><![CDATA[$this->getResponse()->getHeaders()->get($header)]]></code>
     </InvalidReturnStatement>
@@ -554,19 +533,6 @@
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/Module.php">
-    <MissingClosureParamType>
-      <code>$sm</code>
-    </MissingClosureParamType>
-    <MissingClosureReturnType/>
-    <MixedAssignment>
-      <code>$foo</code>
-    </MixedAssignment>
-    <MixedMethodCall>
-      <code>get</code>
-    </MixedMethodCall>
-    <MixedPropertyAssignment>
-      <code>$foo</code>
-    </MixedPropertyAssignment>
     <UnusedClass>
       <code>Module</code>
     </UnusedClass>
@@ -577,15 +543,9 @@
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/Module.php">
-    <MissingClosureParamType>
-      <code>$sm</code>
-    </MissingClosureParamType>
     <UnusedClass>
       <code>Module</code>
     </UnusedClass>
-    <UnusedClosureParam>
-      <code>$sm</code>
-    </UnusedClosureParam>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/src/Foo/Controller/IndexController.php">
     <UnusedClass>
