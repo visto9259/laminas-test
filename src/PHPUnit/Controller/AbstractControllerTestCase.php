@@ -240,11 +240,11 @@ abstract class AbstractControllerTestCase extends TestCase
         $uri         = new HttpUri($url);
         $queryString = $uri->getQuery();
 
-        if ($queryString) {
+        if (null !== $queryString) {
             parse_str($queryString, $query);
         }
 
-        if ($params) {
+        if (null !== $params && [] !== $params) {
             switch ($method) {
                 case HttpRequest::METHOD_POST:
                     $post = $params;
@@ -291,11 +291,11 @@ abstract class AbstractControllerTestCase extends TestCase
     public function dispatch($url, $method = null, $params = [], $isXmlHttpRequest = false)
     {
         if (
-            ! $method
+            null === $method
             && $this->getRequest() instanceof HttpRequest
         ) {
             $method = $this->getRequest()->getMethod();
-        } elseif (! $method) {
+        } elseif (null === $method) {
             $method = HttpRequest::METHOD_GET;
         }
 
@@ -479,7 +479,7 @@ abstract class AbstractControllerTestCase extends TestCase
             $this->setExpectedException($type, $message);
         } else {
             $this->expectException($type);
-            if (! empty($message)) {
+            if (null !== $message) {
                 $this->expectExceptionMessage($message);
             }
         }
