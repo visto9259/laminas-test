@@ -108,6 +108,16 @@ return [
                     ],
                 ],
             ],
+            'childview'                => [
+                'type'    => 'literal',
+                'options' => [
+                    'route'    => '/childview',
+                    'defaults' => [
+                        'controller' => 'baz_index',
+                        'action'     => 'childview',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers'  => [
@@ -117,8 +127,10 @@ return [
     ],
     'view_manager' => [
         'template_map'        => [
-            '404'   => __DIR__ . '/../view/baz/error/404.phtml',
-            'error' => __DIR__ . '/../view/baz/error/error.phtml',
+            '404'    => __DIR__ . '/../view/baz/error/404.phtml',
+            'error'  => __DIR__ . '/../view/baz/error/error.phtml',
+            'child1' => __DIR__ . '/../view/baz/index/child1.phtml',
+            'child2' => __DIR__ . '/../view/baz/index/child2.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',
