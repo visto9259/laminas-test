@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bar;
 
 use Laminas\Loader\StandardAutoloader;
+use stdClass;
 
 class Module
 {
@@ -33,12 +34,7 @@ class Module
             // Legacy Zend Framework aliases
             'aliases'   => [],
             'factories' => [
-                'BarObject' => static function ($sm) {
-                    $foo      = $sm->get('FooObject');
-                    $foo->bar = 'baz';
-
-                    return $foo;
-                },
+                'BarObject' => static fn(): stdClass => new stdClass(),
             ],
         ];
     }

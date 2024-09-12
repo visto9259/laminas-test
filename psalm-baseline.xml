@@ -6,18 +6,8 @@
     </PossiblyFalseArgument>
   </file>
   <file src="src/PHPUnit/Constraint/LaminasConstraint.php">
-    <InternalClass>
-      <code><![CDATA[new ExpectationFailedException(
-                $this->createFailureMessage($failedException->getMessage()),
-                $failedException->getComparisonFailure(),
-            )]]></code>
-    </InternalClass>
     <InternalMethod>
       <code><![CDATA[getComparisonFailure]]></code>
-      <code><![CDATA[new ExpectationFailedException(
-                $this->createFailureMessage($failedException->getMessage()),
-                $failedException->getComparisonFailure(),
-            )]]></code>
     </InternalMethod>
     <MixedArgument>
       <code><![CDATA[$controllerManager->get($controllerIdentifier)]]></code>
@@ -61,100 +51,6 @@
       <code><![CDATA[createFailureMessage]]></code>
       <code><![CDATA[createFailureMessage]]></code>
     </DeprecatedMethod>
-    <InternalClass>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting application exception, param "exception" does not exist'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf(
-                    'Failed asserting matched route name was "%s", actual matched route name is "%s"',
-                    $route,
-                    $match
-                )
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting action name "%s", actual action name is "%s"', $action, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting action name was NOT "%s"', $action)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller class "%s", actual controller class is "%s"', $controller, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller class was NOT "%s"', $controller)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller name "%s", actual controller name is "%s"', $controller, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller name was NOT "%s"', $controller)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting response code "%s", actual status code is "%s"', $code, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting response code was NOT "%s"', $code)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Several modules WAS not loaded "%s"', implode(', ', $list))
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Several modules are not loaded "%s"', implode(', ', $list))
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-    </InternalClass>
-    <InternalMethod>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting application exception, param "exception" does not exist'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf(
-                    'Failed asserting matched route name was "%s", actual matched route name is "%s"',
-                    $route,
-                    $match
-                )
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting action name "%s", actual action name is "%s"', $action, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting action name was NOT "%s"', $action)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller class "%s", actual controller class is "%s"', $controller, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller class was NOT "%s"', $controller)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller name "%s", actual controller name is "%s"', $controller, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting controller name was NOT "%s"', $controller)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting response code "%s", actual status code is "%s"', $code, $match)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Failed asserting response code was NOT "%s"', $code)
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Several modules WAS not loaded "%s"', implode(', ', $list))
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                sprintf('Several modules are not loaded "%s"', implode(', ', $list))
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage('No route matched'))]]></code>
-    </InternalMethod>
     <LessSpecificReturnStatement>
       <code><![CDATA[$this->getApplication()->getServiceManager()]]></code>
     </LessSpecificReturnStatement>
@@ -170,7 +66,6 @@
       <code><![CDATA[$match]]></code>
       <code><![CDATA[$match]]></code>
       <code><![CDATA[$method]]></code>
-      <code><![CDATA[$modulesLoaded]]></code>
       <code><![CDATA[$modulesLoaded]]></code>
       <code><![CDATA[$post]]></code>
       <code><![CDATA[$query]]></code>
@@ -192,8 +87,6 @@
       <code><![CDATA[$match]]></code>
       <code><![CDATA[$method]]></code>
       <code><![CDATA[$moduleManager]]></code>
-      <code><![CDATA[$moduleManager]]></code>
-      <code><![CDATA[$modulesLoaded]]></code>
       <code><![CDATA[$modulesLoaded]]></code>
       <code><![CDATA[$post]]></code>
       <code><![CDATA[$query]]></code>
@@ -210,7 +103,6 @@
       <code><![CDATA[detach]]></code>
       <code><![CDATA[getError]]></code>
       <code><![CDATA[getMatchedRouteName]]></code>
-      <code><![CDATA[getModules]]></code>
       <code><![CDATA[getModules]]></code>
       <code><![CDATA[getParam]]></code>
       <code><![CDATA[getParam]]></code>
@@ -326,314 +218,6 @@
       <code><![CDATA[createFailureMessage]]></code>
       <code><![CDATA[createFailureMessage]]></code>
     </DeprecatedMethod>
-    <InternalClass>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting node DENOTED BY %s DOES NOT CONTAIN content "%s"',
-                    $path,
-                    $match
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting response header "%s" DOES NOT CONTAIN "%s"',
-                    $header,
-                    $match
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting response header "%s" DOES NOT MATCH regex "%s"',
-                    $header,
-                    $pattern
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT CONTAIN content MATCHING "%s"',
-                $path,
-                $pattern
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT EXIST',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT OCCUR EXACTLY %d times',
-                $path,
-                $count
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS AT LEAST %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS AT MOST %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS EXACTLY %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node denoted by %s CONTAINS content MATCHING "%s", actual content is "%s"',
-                $path,
-                $pattern,
-                implode('', $nodeValues)
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response DOES NOT redirect to URL MATCHING "%s"',
-                $pattern
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" WAS NOT found',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" exists and contains "%s", actual content is "%s"',
-                $header,
-                $match,
-                $currentHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" exists and matches regex "%s", actual content is "%s"',
-                $header,
-                $pattern,
-                $currentHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" found',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response is NOT a redirect, actual redirection is "%s"',
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to "%s"',
-                $url
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to "%s", actual redirection is "%s"',
-                $url,
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to URL MATCHING "%s", actual redirection is "%s"',
-                $pattern,
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-            'Failed asserting node denoted by %s CONTAINS content "%s", Contents: [%s]',
-            $path,
-            $match,
-            implode(',', $nodeValues)
-        )))]]></code>
-    </InternalClass>
-    <InternalMethod>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
-                'Failed asserting response is a redirect'
-            ))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting node DENOTED BY %s DOES NOT CONTAIN content "%s"',
-                    $path,
-                    $match
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting response header "%s" DOES NOT CONTAIN "%s"',
-                    $header,
-                    $match
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                    'Failed asserting response header "%s" DOES NOT MATCH regex "%s"',
-                    $header,
-                    $pattern
-                )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT CONTAIN content MATCHING "%s"',
-                $path,
-                $pattern
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT EXIST',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s DOES NOT OCCUR EXACTLY %d times',
-                $path,
-                $count
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s EXISTS',
-                $path
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS AT LEAST %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS AT MOST %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node DENOTED BY %s OCCURS EXACTLY %d times, actually occurs %d times',
-                $path,
-                $count,
-                $match
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting node denoted by %s CONTAINS content MATCHING "%s", actual content is "%s"',
-                $path,
-                $pattern,
-                implode('', $nodeValues)
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response DOES NOT redirect to URL MATCHING "%s"',
-                $pattern
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" WAS NOT found',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" exists and contains "%s", actual content is "%s"',
-                $header,
-                $match,
-                $currentHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" exists and matches regex "%s", actual content is "%s"',
-                $header,
-                $pattern,
-                $currentHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header "%s" found',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response header, header "%s" doesn\'t exist',
-                $header
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response is NOT a redirect, actual redirection is "%s"',
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to "%s"',
-                $url
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to "%s", actual redirection is "%s"',
-                $url,
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-                'Failed asserting response redirects to URL MATCHING "%s", actual redirection is "%s"',
-                $pattern,
-                $responseHeader->getFieldValue()
-            )))]]></code>
-      <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(sprintf(
-            'Failed asserting node denoted by %s CONTAINS content "%s", Contents: [%s]',
-            $path,
-            $match,
-            implode(',', $nodeValues)
-        )))]]></code>
-    </InternalMethod>
     <InvalidReturnStatement>
       <code><![CDATA[$this->getResponse()->getHeaders()->get($header)]]></code>
     </InvalidReturnStatement>
@@ -943,21 +527,6 @@
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/Module.php">
-    <MissingClosureParamType>
-      <code><![CDATA[$sm]]></code>
-    </MissingClosureParamType>
-    <MissingClosureReturnType>
-      <code><![CDATA[static function ($sm) {]]></code>
-    </MissingClosureReturnType>
-    <MixedAssignment>
-      <code><![CDATA[$foo]]></code>
-    </MixedAssignment>
-    <MixedMethodCall>
-      <code><![CDATA[get]]></code>
-    </MixedMethodCall>
-    <MixedPropertyAssignment>
-      <code><![CDATA[$foo]]></code>
-    </MixedPropertyAssignment>
     <UnusedClass>
       <code><![CDATA[Module]]></code>
     </UnusedClass>
@@ -968,15 +537,9 @@
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/Module.php">
-    <MissingClosureParamType>
-      <code><![CDATA[$sm]]></code>
-    </MissingClosureParamType>
     <UnusedClass>
       <code><![CDATA[Module]]></code>
     </UnusedClass>
-    <UnusedClosureParam>
-      <code><![CDATA[$sm]]></code>
-    </UnusedClosureParam>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/src/Foo/Controller/IndexController.php">
     <UnusedClass>

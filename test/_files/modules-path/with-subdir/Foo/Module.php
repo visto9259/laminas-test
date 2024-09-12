@@ -34,7 +34,7 @@ class Module
             // Legacy Zend Framework aliases
             'aliases'   => [],
             'factories' => [
-                'FooObject' => static fn($sm): stdClass => new stdClass(),
+                'FooObject' => static fn(): stdClass => new stdClass(),
             ],
         ];
     }
