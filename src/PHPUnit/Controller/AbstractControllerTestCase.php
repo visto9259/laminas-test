@@ -382,8 +382,8 @@ abstract class AbstractControllerTestCase extends TestCase
      */
     public function assertModulesLoaded(array $modules)
     {
-        /** @var ModuleManager $moduleManager */
         $moduleManager = $this->getApplicationServiceLocator()->get('ModuleManager');
+        assert($moduleManager instanceof ModuleManager);
         $modulesLoaded = array_keys($moduleManager->getLoadedModules());
         $list          = array_diff($modules, $modulesLoaded);
         if ($list) {
