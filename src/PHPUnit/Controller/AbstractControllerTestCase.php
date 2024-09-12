@@ -30,8 +30,8 @@ use Throwable;
 
 use function array_diff;
 use function array_intersect;
-use function array_keys;
 use function array_key_exists;
+use function array_keys;
 use function array_merge;
 use function assert;
 use function class_exists;
