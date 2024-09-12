@@ -19,6 +19,9 @@ class MemoryLeakTest extends AbstractControllerTestCase
         self::$memStart = memory_get_usage(true);
     }
 
+    /**
+     * @return array<array-key, array{null}>
+     */
     public static function dataForMultipleTests(): array
     {
         return array_fill(0, 100, [null]);
