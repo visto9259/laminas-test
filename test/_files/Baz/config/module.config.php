@@ -131,6 +131,7 @@ return [
             'error'  => __DIR__ . '/../view/baz/error/error.phtml',
             'child1' => __DIR__ . '/../view/baz/index/child1.phtml',
             'child2' => __DIR__ . '/../view/baz/index/child2.phtml',
+            'child3' => __DIR__ . '/../view/baz/index/child3.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',

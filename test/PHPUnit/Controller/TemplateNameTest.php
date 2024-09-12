@@ -19,7 +19,7 @@ class TemplateNameTest extends AbstractHttpControllerTestCaseTest
     /**
      * Test case for a controller returning a view with 2 children
      * View hierarchy:
-     *   layout/layout -> baz/index/childview -> child1
+     *   layout/layout -> baz/index/childview -> child1 -> child3
      *                                        -> child2
      */
     public function testAssertTemplateWithMultipleChildren(): void
@@ -30,11 +30,13 @@ class TemplateNameTest extends AbstractHttpControllerTestCaseTest
         $this->assertQueryContentContains('p', 'Parent');
         $this->assertQueryContentContains('p', 'Child 1');
         $this->assertQueryContentContains('p', 'Child 2');
+        $this->assertQueryContentContains('p', 'Child 3');
 
         $this->assertTemplateName('layout/layout');
         $this->assertTemplateName('baz/index/childview');
         $this->assertTemplateName('child1');
         $this->assertTemplateName('child2');
+        $this->assertTemplateName('child3');
         $this->assertNotTemplateName('foo');
     }
 }

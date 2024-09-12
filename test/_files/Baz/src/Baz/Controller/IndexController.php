@@ -69,8 +69,11 @@ class IndexController extends AbstractActionController
         $child1->setTemplate('child1');
         $child2 = new ViewModel();
         $child2->setTemplate('child2');
+        $child3 = new ViewModel();
+        $child3->setTemplate('child3');
         $view = new ViewModel();
         $view->addChild($child1, 'child1');
+        $child1->addChild($child3, 'child3');
         $view->addChild($child2, 'child2');
         return $view;
     }

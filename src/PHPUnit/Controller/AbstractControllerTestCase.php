@@ -817,14 +817,13 @@ abstract class AbstractControllerTestCase extends TestCase
      */
     protected function searchTemplates($viewModel, $templateName)
     {
-        $found = false;
         if ($viewModel->getTemplate($templateName) === $templateName) {
             return true;
         }
+
         foreach ($viewModel->getChildren() as $child) {
-            $found = $this->searchTemplates($child, $templateName);
-            if ($found) {
-                return $found;
+            if ($this->searchTemplates($child, $templateName)) {
+                return true;
             }
         }
 
