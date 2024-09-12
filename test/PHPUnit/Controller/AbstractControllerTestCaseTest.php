@@ -612,9 +612,9 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
     }
 
     /**
-     * @return Generator
+     * @return iterable<non-empty-string, array{non-empty-string}>
      */
-    public static function routeParam()
+    public static function routeParam(): iterable
     {
         yield 'phpunit' => ['phpunit'];
         yield 'param' => ['param'];

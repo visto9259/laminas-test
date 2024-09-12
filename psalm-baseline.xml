@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="5.16.0@2897ba636551a8cb61601cc26f6ccfbba6c36591">
+<files psalm-version="5.26.1@d747f6500b38ac4f7dfc5edbcae6e4b637d7add0">
   <file src="src/PHPUnit/Constraint/IsCurrentModuleNameConstraint.php">
     <PossiblyFalseArgument>
       <code><![CDATA[strrpos($appModules, '\\')]]></code>
@@ -13,7 +13,7 @@
             )]]></code>
     </InternalClass>
     <InternalMethod>
-      <code>getComparisonFailure</code>
+      <code><![CDATA[getComparisonFailure]]></code>
       <code><![CDATA[new ExpectationFailedException(
                 $this->createFailureMessage($failedException->getMessage()),
                 $failedException->getComparisonFailure(),
@@ -23,43 +23,43 @@
       <code><![CDATA[$controllerManager->get($controllerIdentifier)]]></code>
     </MixedArgument>
     <MixedAssignment>
-      <code>$controllerIdentifier</code>
-      <code>$controllerManager</code>
-      <code>$routeMatch</code>
+      <code><![CDATA[$controllerIdentifier]]></code>
+      <code><![CDATA[$controllerManager]]></code>
+      <code><![CDATA[$routeMatch]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>get</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getRouteMatch</code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
     </MixedMethodCall>
     <UndefinedInterfaceMethod>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
     </UndefinedInterfaceMethod>
   </file>
   <file src="src/PHPUnit/Controller/AbstractControllerTestCase.php">
     <ArgumentTypeCoercion>
-      <code>$type</code>
+      <code><![CDATA[$type]]></code>
     </ArgumentTypeCoercion>
     <DeprecatedMethod>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
     </DeprecatedMethod>
     <InternalClass>
       <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
@@ -159,88 +159,88 @@
       <code><![CDATA[$this->getApplication()->getServiceManager()]]></code>
     </LessSpecificReturnStatement>
     <MissingClosureParamType>
-      <code>$r</code>
+      <code><![CDATA[$r]]></code>
     </MissingClosureParamType>
     <MixedArgument>
-      <code>$event</code>
-      <code>$event</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$method</code>
-      <code>$modulesLoaded</code>
-      <code>$modulesLoaded</code>
-      <code>$post</code>
-      <code>$query</code>
-      <code>$query</code>
-      <code>$viewModel</code>
+      <code><![CDATA[$event]]></code>
+      <code><![CDATA[$event]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$method]]></code>
+      <code><![CDATA[$modulesLoaded]]></code>
+      <code><![CDATA[$modulesLoaded]]></code>
+      <code><![CDATA[$post]]></code>
+      <code><![CDATA[$query]]></code>
+      <code><![CDATA[$query]]></code>
+      <code><![CDATA[$viewModel]]></code>
     </MixedArgument>
     <MixedArgumentTypeCoercion>
-      <code>$list</code>
-      <code>$list</code>
+      <code><![CDATA[$list]]></code>
+      <code><![CDATA[$list]]></code>
     </MixedArgumentTypeCoercion>
     <MixedAssignment>
-      <code>$event</code>
-      <code>$exception</code>
-      <code>$headers</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$match</code>
-      <code>$method</code>
-      <code>$moduleManager</code>
-      <code>$moduleManager</code>
-      <code>$modulesLoaded</code>
-      <code>$modulesLoaded</code>
-      <code>$post</code>
-      <code>$query</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$viewModel</code>
+      <code><![CDATA[$event]]></code>
+      <code><![CDATA[$exception]]></code>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$match]]></code>
+      <code><![CDATA[$method]]></code>
+      <code><![CDATA[$moduleManager]]></code>
+      <code><![CDATA[$moduleManager]]></code>
+      <code><![CDATA[$modulesLoaded]]></code>
+      <code><![CDATA[$modulesLoaded]]></code>
+      <code><![CDATA[$post]]></code>
+      <code><![CDATA[$query]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$viewModel]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>addHeaderLine</code>
-      <code>detach</code>
-      <code>getError</code>
-      <code>getMatchedRouteName</code>
-      <code>getModules</code>
-      <code>getModules</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getResponse</code>
-      <code>getRouteMatch</code>
-      <code>getRouteMatch</code>
-      <code>getRouteMatch</code>
-      <code>getRouteMatch</code>
-      <code>getRouteMatch</code>
-      <code>getRouteMatch</code>
-      <code>getViewModel</code>
-      <code>setName</code>
-      <code>setParam</code>
-      <code>toArray</code>
-      <code>toArray</code>
+      <code><![CDATA[addHeaderLine]]></code>
+      <code><![CDATA[detach]]></code>
+      <code><![CDATA[getError]]></code>
+      <code><![CDATA[getMatchedRouteName]]></code>
+      <code><![CDATA[getModules]]></code>
+      <code><![CDATA[getModules]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getResponse]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getViewModel]]></code>
+      <code><![CDATA[setName]]></code>
+      <code><![CDATA[setParam]]></code>
+      <code><![CDATA[toArray]]></code>
+      <code><![CDATA[toArray]]></code>
     </MixedMethodCall>
     <MoreSpecificReturnType>
-      <code>ServiceManager</code>
+      <code><![CDATA[ServiceManager]]></code>
     </MoreSpecificReturnType>
     <PossiblyFalseOperand>
       <code><![CDATA[strrpos($controllerClass, '\\')]]></code>
       <code><![CDATA[strrpos($controllerClass, '\\')]]></code>
     </PossiblyFalseOperand>
     <PossiblyNullPropertyAssignmentValue>
-      <code>null</code>
+      <code><![CDATA[null]]></code>
     </PossiblyNullPropertyAssignmentValue>
     <RedundantConditionGivenDocblockType>
       <code><![CDATA[$this->application]]></code>
@@ -249,82 +249,82 @@
       <code><![CDATA[null !== $this->applicationConfig]]></code>
     </RedundantConditionGivenDocblockType>
     <TooManyArguments>
-      <code>getTemplate</code>
+      <code><![CDATA[getTemplate]]></code>
     </TooManyArguments>
     <UndefinedInterfaceMethod>
-      <code>getHeaders</code>
-      <code>getMethod</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getPost</code>
-      <code>getQuery</code>
-      <code>setMethod</code>
-      <code>setPost</code>
-      <code>setQuery</code>
-      <code>setRequestUri</code>
-      <code>setUri</code>
+      <code><![CDATA[getHeaders]]></code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getPost]]></code>
+      <code><![CDATA[getQuery]]></code>
+      <code><![CDATA[setMethod]]></code>
+      <code><![CDATA[setPost]]></code>
+      <code><![CDATA[setQuery]]></code>
+      <code><![CDATA[setRequestUri]]></code>
+      <code><![CDATA[setUri]]></code>
     </UndefinedInterfaceMethod>
     <UndefinedMethod>
-      <code>setExpectedException</code>
+      <code><![CDATA[setExpectedException]]></code>
     </UndefinedMethod>
   </file>
   <file src="src/PHPUnit/Controller/AbstractHttpControllerTestCase.php">
     <ArgumentTypeCoercion>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
-      <code>$pattern</code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
+      <code><![CDATA[$pattern]]></code>
     </ArgumentTypeCoercion>
     <DeprecatedMethod>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
-      <code>createFailureMessage</code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
+      <code><![CDATA[createFailureMessage]]></code>
     </DeprecatedMethod>
     <InternalClass>
       <code><![CDATA[new ExpectationFailedException($this->createFailureMessage(
@@ -638,7 +638,7 @@
       <code><![CDATA[$this->getResponse()->getHeaders()->get($header)]]></code>
     </InvalidReturnStatement>
     <InvalidReturnType>
-      <code>HeaderInterface|false</code>
+      <code><![CDATA[HeaderInterface|false]]></code>
     </InvalidReturnType>
     <MixedArgument>
       <code><![CDATA[$currentHeader->getFieldValue()]]></code>
@@ -648,54 +648,54 @@
       <code><![CDATA[$response->getContent()]]></code>
     </MixedArgument>
     <MixedAssignment>
-      <code>$currentValue</code>
+      <code><![CDATA[$currentValue]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
-      <code>getFieldValue</code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
+      <code><![CDATA[getFieldValue]]></code>
     </MixedMethodCall>
     <MixedPropertyFetch>
       <code><![CDATA[$node->nodeValue]]></code>
     </MixedPropertyFetch>
     <PossiblyUndefinedVariable>
-      <code>$currentHeader</code>
-      <code>$currentHeader</code>
-      <code>$currentHeader</code>
-      <code>$currentHeader</code>
-      <code>$node</code>
+      <code><![CDATA[$currentHeader]]></code>
+      <code><![CDATA[$currentHeader]]></code>
+      <code><![CDATA[$currentHeader]]></code>
+      <code><![CDATA[$currentHeader]]></code>
+      <code><![CDATA[$node]]></code>
     </PossiblyUndefinedVariable>
     <RedundantCondition>
-      <code>assertFalse</code>
-      <code>assertTrue</code>
-      <code>assertTrue</code>
+      <code><![CDATA[assertFalse]]></code>
+      <code><![CDATA[assertTrue]]></code>
+      <code><![CDATA[assertTrue]]></code>
     </RedundantCondition>
     <RedundantConditionGivenDocblockType>
-      <code>assertFalse</code>
-      <code>assertFalse</code>
+      <code><![CDATA[assertFalse]]></code>
+      <code><![CDATA[assertFalse]]></code>
     </RedundantConditionGivenDocblockType>
   </file>
   <file src="src/Util/ModuleLoader.php">
     <MixedArgument>
-      <code>$smConfig</code>
+      <code><![CDATA[$smConfig]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$configuration['module_listener_options']['module_paths'][$key]]]></code>
       <code><![CDATA[$configuration['modules'][]]]></code>
-      <code>$module</code>
-      <code>$smConfig</code>
+      <code><![CDATA[$module]]></code>
+      <code><![CDATA[$smConfig]]></code>
     </MixedAssignment>
     <MixedInferredReturnType>
-      <code>Application</code>
-      <code>ModuleManager</code>
+      <code><![CDATA[Application]]></code>
+      <code><![CDATA[ModuleManager]]></code>
     </MixedInferredReturnType>
     <MixedMethodCall>
-      <code>loadModules</code>
+      <code><![CDATA[loadModules]]></code>
     </MixedMethodCall>
     <MixedReturnStatement>
       <code><![CDATA[$this->getServiceManager()->get('Application')]]></code>
@@ -704,12 +704,12 @@
   </file>
   <file src="test/PHPUnit/Controller/AbstractControllerTestCaseTest.php">
     <InvalidArgument>
-      <code>$haystack</code>
-      <code>$haystack</code>
+      <code><![CDATA[$haystack]]></code>
+      <code><![CDATA[$haystack]]></code>
     </InvalidArgument>
     <MixedArgument>
-      <code>$message</code>
-      <code>$message</code>
+      <code><![CDATA[$message]]></code>
+      <code><![CDATA[$message]]></code>
       <code><![CDATA[$this->getRequest()->getContent()]]></code>
     </MixedArgument>
     <MixedArrayAccess>
@@ -721,41 +721,38 @@
       <code><![CDATA[$applicationConfig['modules'][]]]></code>
     </MixedArrayAssignment>
     <MixedAssignment>
-      <code>$config</code>
-      <code>$file</code>
+      <code><![CDATA[$config]]></code>
+      <code><![CDATA[$file]]></code>
     </MixedAssignment>
-    <MixedInferredReturnType>
-      <code>Generator</code>
-    </MixedInferredReturnType>
     <MixedMethodCall>
-      <code>getError</code>
-      <code>setParam</code>
-      <code>setParam</code>
-      <code>toString</code>
+      <code><![CDATA[getError]]></code>
+      <code><![CDATA[setParam]]></code>
+      <code><![CDATA[setParam]]></code>
+      <code><![CDATA[toString]]></code>
     </MixedMethodCall>
     <MixedOperand>
-      <code>$config</code>
+      <code><![CDATA[$config]]></code>
     </MixedOperand>
     <PossiblyUndefinedVariable>
-      <code>$message</code>
-      <code>$message</code>
+      <code><![CDATA[$message]]></code>
+      <code><![CDATA[$message]]></code>
     </PossiblyUndefinedVariable>
     <PossiblyUnusedReturnValue>
-      <code>bool</code>
+      <code><![CDATA[bool]]></code>
     </PossiblyUnusedReturnValue>
     <UndefinedInterfaceMethod>
-      <code>getMethod</code>
-      <code>getMethod</code>
-      <code>getMethod</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getQuery</code>
-      <code>getRequestUri</code>
-      <code>setMethod</code>
-      <code>setMethod</code>
-      <code>setMethod</code>
-      <code>setMethod</code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getQuery]]></code>
+      <code><![CDATA[getRequestUri]]></code>
+      <code><![CDATA[setMethod]]></code>
+      <code><![CDATA[setMethod]]></code>
+      <code><![CDATA[setMethod]]></code>
+      <code><![CDATA[setMethod]]></code>
     </UndefinedInterfaceMethod>
   </file>
   <file src="test/PHPUnit/Controller/AbstractHttpControllerTestCaseTest.php">
@@ -764,86 +761,83 @@
     </ArgumentTypeCoercion>
     <MixedArgument>
       <code><![CDATA[$layout->getChildren()]]></code>
-      <code>$messages</code>
-      <code>$messages</code>
-      <code>$messages</code>
-      <code>$messages</code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
     </MixedArgument>
     <MixedAssignment>
-      <code>$controller</code>
-      <code>$controller</code>
-      <code>$controller</code>
-      <code>$controller</code>
-      <code>$flashMessenger</code>
-      <code>$flashMessenger</code>
-      <code>$flashMessenger</code>
-      <code>$flashMessenger</code>
-      <code>$layout</code>
-      <code>$messages</code>
-      <code>$messages</code>
-      <code>$messages</code>
-      <code>$messages</code>
-      <code>$mvcEvent</code>
-      <code>$routeMatch</code>
-      <code>$routeMatch</code>
-      <code>$viewModel</code>
-      <code>$viewModel</code>
+      <code><![CDATA[$controller]]></code>
+      <code><![CDATA[$controller]]></code>
+      <code><![CDATA[$controller]]></code>
+      <code><![CDATA[$controller]]></code>
+      <code><![CDATA[$flashMessenger]]></code>
+      <code><![CDATA[$flashMessenger]]></code>
+      <code><![CDATA[$flashMessenger]]></code>
+      <code><![CDATA[$flashMessenger]]></code>
+      <code><![CDATA[$layout]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$messages]]></code>
+      <code><![CDATA[$mvcEvent]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$routeMatch]]></code>
+      <code><![CDATA[$viewModel]]></code>
+      <code><![CDATA[$viewModel]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>flashMessenger</code>
-      <code>flashMessenger</code>
-      <code>flashMessenger</code>
-      <code>flashMessenger</code>
-      <code>get</code>
-      <code>get</code>
-      <code>get</code>
-      <code>get</code>
-      <code>getApplication</code>
-      <code>getChildren</code>
-      <code>getError</code>
-      <code>getMessages</code>
-      <code>getMessages</code>
-      <code>getMessages</code>
-      <code>getMessages</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getParam</code>
-      <code>getPort</code>
-      <code>getResult</code>
-      <code>getResult</code>
-      <code>getRouteMatch</code>
-      <code>getTemplate</code>
-      <code>getTemplate</code>
-      <code>getTemplate</code>
-      <code>getViewModel</code>
-      <code>setParam</code>
-      <code>setParam</code>
-      <code>setPost</code>
-      <code>setQuery</code>
+      <code><![CDATA[flashMessenger]]></code>
+      <code><![CDATA[flashMessenger]]></code>
+      <code><![CDATA[flashMessenger]]></code>
+      <code><![CDATA[flashMessenger]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[getApplication]]></code>
+      <code><![CDATA[getChildren]]></code>
+      <code><![CDATA[getError]]></code>
+      <code><![CDATA[getMessages]]></code>
+      <code><![CDATA[getMessages]]></code>
+      <code><![CDATA[getMessages]]></code>
+      <code><![CDATA[getMessages]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getParam]]></code>
+      <code><![CDATA[getPort]]></code>
+      <code><![CDATA[getResult]]></code>
+      <code><![CDATA[getResult]]></code>
+      <code><![CDATA[getRouteMatch]]></code>
+      <code><![CDATA[getTemplate]]></code>
+      <code><![CDATA[getTemplate]]></code>
+      <code><![CDATA[getTemplate]]></code>
+      <code><![CDATA[getViewModel]]></code>
+      <code><![CDATA[setParam]]></code>
+      <code><![CDATA[setParam]]></code>
+      <code><![CDATA[setPost]]></code>
+      <code><![CDATA[setQuery]]></code>
     </MixedMethodCall>
     <UndefinedInterfaceMethod>
-      <code>getMethod</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getMvcEvent</code>
-      <code>getUri</code>
-      <code>isXmlHttpRequest</code>
-      <code>isXmlHttpRequest</code>
-      <code>isXmlHttpRequest</code>
-      <code>setMethod</code>
-      <code>setMethod</code>
+      <code><![CDATA[getMethod]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getMvcEvent]]></code>
+      <code><![CDATA[getUri]]></code>
+      <code><![CDATA[isXmlHttpRequest]]></code>
+      <code><![CDATA[isXmlHttpRequest]]></code>
+      <code><![CDATA[isXmlHttpRequest]]></code>
+      <code><![CDATA[setMethod]]></code>
+      <code><![CDATA[setMethod]]></code>
     </UndefinedInterfaceMethod>
   </file>
   <file src="test/PHPUnit/Controller/MemoryLeakTest.php">
-    <MixedInferredReturnType>
-      <code>array</code>
-    </MixedInferredReturnType>
     <PossiblyNullOperand>
-      <code>self::$memStart</code>
+      <code><![CDATA[self::$memStart]]></code>
     </PossiblyNullOperand>
   </file>
   <file src="test/PHPUnit/Util/ModuleLoaderTest.php">
@@ -857,136 +851,136 @@
       <code><![CDATA['stdClass']]></code>
     </ArgumentTypeCoercion>
     <MixedAssignment>
-      <code>$baz</code>
-      <code>$baz</code>
-      <code>$baz</code>
-      <code>$baz</code>
-      <code>$file</code>
-      <code>$foo</code>
-      <code>$fooObject</code>
+      <code><![CDATA[$baz]]></code>
+      <code><![CDATA[$baz]]></code>
+      <code><![CDATA[$baz]]></code>
+      <code><![CDATA[$baz]]></code>
+      <code><![CDATA[$file]]></code>
+      <code><![CDATA[$foo]]></code>
+      <code><![CDATA[$fooObject]]></code>
     </MixedAssignment>
     <PossiblyUnusedReturnValue>
-      <code>bool</code>
+      <code><![CDATA[bool]]></code>
     </PossiblyUnusedReturnValue>
   </file>
   <file src="test/_files/Baz/Module.php">
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/Baz/src/Baz/Controller/IndexController.php">
     <MixedAssignment>
-      <code>$numGet</code>
-      <code>$numPost</code>
+      <code><![CDATA[$numGet]]></code>
+      <code><![CDATA[$numPost]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>addHeaderLine</code>
-      <code>addHeaderLine</code>
-      <code>addMessage</code>
-      <code>get</code>
-      <code>get</code>
+      <code><![CDATA[addHeaderLine]]></code>
+      <code><![CDATA[addHeaderLine]]></code>
+      <code><![CDATA[addMessage]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[get]]></code>
     </MixedMethodCall>
     <MixedReturnTypeCoercion>
       <code><![CDATA[['num_get' => $numGet, 'num_post' => $numPost]]]></code>
       <code><![CDATA[array<string, string>]]></code>
     </MixedReturnTypeCoercion>
     <UndefinedInterfaceMethod>
-      <code>getHeaders</code>
-      <code>getPost</code>
-      <code>getQuery</code>
+      <code><![CDATA[getHeaders]]></code>
+      <code><![CDATA[getPost]]></code>
+      <code><![CDATA[getQuery]]></code>
     </UndefinedInterfaceMethod>
     <UndefinedMagicMethod>
-      <code>flashMessenger</code>
+      <code><![CDATA[flashMessenger]]></code>
     </UndefinedMagicMethod>
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithEvents/Module.php">
     <MissingClosureParamType>
-      <code>$e</code>
+      <code><![CDATA[$e]]></code>
     </MissingClosureParamType>
     <PossiblyNullReference>
-      <code>attach</code>
-      <code>getMatchedRouteName</code>
+      <code><![CDATA[attach]]></code>
+      <code><![CDATA[getMatchedRouteName]]></code>
     </PossiblyNullReference>
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
     <UnusedClosureParam>
-      <code>$e</code>
+      <code><![CDATA[$e]]></code>
     </UnusedClosureParam>
   </file>
   <file src="test/_files/ModuleWithNamespace/TestModule/Module.php">
     <PossiblyUnusedMethod>
-      <code>getAutoloaderConfig</code>
-      <code>getConfig</code>
+      <code><![CDATA[getAutoloaderConfig]]></code>
+      <code><![CDATA[getConfig]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/ModuleWithNamespace/TestModule/src/Controller/IndexController.php">
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/Test/Module.php">
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/Test/src/Controller/IndexController.php">
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/TestModule/Module.php">
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/TestModule/src/Controller/IndexController.php">
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/Module.php">
     <MissingClosureParamType>
-      <code>$sm</code>
+      <code><![CDATA[$sm]]></code>
     </MissingClosureParamType>
     <MissingClosureReturnType>
-      <code>static function ($sm) {</code>
+      <code><![CDATA[static function ($sm) {]]></code>
     </MissingClosureReturnType>
     <MixedAssignment>
-      <code>$foo</code>
+      <code><![CDATA[$foo]]></code>
     </MixedAssignment>
     <MixedMethodCall>
-      <code>get</code>
+      <code><![CDATA[get]]></code>
     </MixedMethodCall>
     <MixedPropertyAssignment>
-      <code>$foo</code>
+      <code><![CDATA[$foo]]></code>
     </MixedPropertyAssignment>
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/src/Bar/Controller/IndexController.php">
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/Module.php">
     <MissingClosureParamType>
-      <code>$sm</code>
+      <code><![CDATA[$sm]]></code>
     </MissingClosureParamType>
     <UnusedClass>
-      <code>Module</code>
+      <code><![CDATA[Module]]></code>
     </UnusedClass>
     <UnusedClosureParam>
-      <code>$sm</code>
+      <code><![CDATA[$sm]]></code>
     </UnusedClosureParam>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/src/Foo/Controller/IndexController.php">
     <UnusedClass>
-      <code>IndexController</code>
+      <code><![CDATA[IndexController]]></code>
     </UnusedClass>
   </file>
 </files>
