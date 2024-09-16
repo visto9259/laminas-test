@@ -15,6 +15,7 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 use LaminasTest\Test\ExpectedExceptionTrait;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamWrapper;
+use PHPUnit\Exception;
 use PHPUnit\Framework\AssertionFailedError;
 use PHPUnit\Framework\ExpectationFailedException;
 use RuntimeException;
@@ -560,6 +561,28 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         $this->assertTemplateName('child2');
         $this->assertTemplateName('child3');
         $this->assertNotTemplateName('foo');
+
+        // Check that the test fails when template is NOT found where it was supposed to found
+        try {
+            $this->assertTemplateName('foo');
+            $receivedException = false;
+        } catch (Exception $exception) {
+            $receivedException = true;
+        }
+        if (! $receivedException) {
+            $this->fail('Expected Exception not thrown');
+        }
+
+        // Check when template is found where it was NOT supposed to found
+        try {
+            $this->assertNotTemplateName('child1');
+            $receivedException = false;
+        } catch (Exception $exception) {
+            $receivedException = true;
+        }
+        if (! $receivedException) {
+            $this->fail('Expected Exception not thrown');
+        }
     }
 
     public function testCustomResponseObject(): void
