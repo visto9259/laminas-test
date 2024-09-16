@@ -572,6 +572,10 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         try {
             $this->assertTemplateName('foo');
         } catch (ExpectationFailedException $exception) {
+            $this->assertStringContainsString(
+                'Failed asserting that view model tree contains template "foo"',
+                $exception->getMessage()
+            );
             return;
         }
         $this->fail('Expected Exception not thrown');
@@ -587,6 +591,10 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         try {
             $this->assertNotTemplateName('child1');
         } catch (ExpectationFailedException $exception) {
+            $this->assertStringContainsString(
+                'Failed asserting that view model tree does not contain template "child1"',
+                $exception->getMessage()
+            );
             return;
         }
         $this->fail('Expected Exception not thrown');
