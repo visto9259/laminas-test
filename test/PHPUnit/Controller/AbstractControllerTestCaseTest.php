@@ -538,6 +538,68 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         $this->assertNotTemplateName('template/does/not/exist');
     }
 
+    /**
+     * Test case for a controller returning a view with deeply nested children
+     * View hierarchy:
+     *   layout/layout -> baz/index/childview -> child1 -> child3
+     *                                        -> child2
+     */
+    public function testSearchTemplatesVerifiesDeeplyNestedTemplateName(): void
+    {
+        $this->dispatch('/childview');
+
+        // Check that the rendered content
+        $this->assertQueryContentContains('p', 'Parent');
+        $this->assertQueryContentContains('p', 'Child 1');
+        $this->assertQueryContentContains('p', 'Child 2');
+        $this->assertQueryContentContains('p', 'Child 3');
+
+        $this->assertTemplateName('layout/layout');
+        $this->assertTemplateName('baz/index/childview');
+        $this->assertTemplateName('child1');
+        $this->assertTemplateName('child2');
+        $this->assertTemplateName('child3');
+        $this->assertNotTemplateName('foo');
+    }
+
+    /**
+     * Check that the assertion fails when template is NOT found where it was supposed to found
+     */
+    public function testAssertTemplateNameFailsWhenNotFound(): void
+    {
+        $this->dispatch('/childview');
+
+        try {
+            $this->assertTemplateName('foo');
+        } catch (ExpectationFailedException $exception) {
+            $this->assertStringContainsString(
+                'Failed asserting that view model tree contains template "foo"',
+                $exception->getMessage()
+            );
+            return;
+        }
+        $this->fail('Expected Exception not thrown');
+    }
+
+    /**
+     * Check that the assertion fails when template is found where it was NOT supposed to found
+     */
+    public function testAssertNotTemplateNameFailsWhenFound(): void
+    {
+        $this->dispatch('/childview');
+
+        try {
+            $this->assertNotTemplateName('child1');
+        } catch (ExpectationFailedException $exception) {
+            $this->assertStringContainsString(
+                'Failed asserting that view model tree does not contain template "child1"',
+                $exception->getMessage()
+            );
+            return;
+        }
+        $this->fail('Expected Exception not thrown');
+    }
+
     public function testCustomResponseObject(): void
     {
         $this->dispatch('/custom-response');

@@ -792,7 +792,10 @@ abstract class AbstractControllerTestCase extends TestCase
         }
 
         $viewModel = $application->getMvcEvent()->getViewModel();
-        $this->assertTrue($this->searchTemplates($viewModel, $templateName));
+        $this->assertTrue(
+            $this->searchTemplates($viewModel, $templateName),
+            sprintf('Failed asserting that view model tree contains template "%s"', $templateName)
+        );
     }
 
     /**
@@ -805,7 +808,10 @@ abstract class AbstractControllerTestCase extends TestCase
     public function assertNotTemplateName($templateName)
     {
         $viewModel = $this->getApplication()->getMvcEvent()->getViewModel();
-        $this->assertFalse($this->searchTemplates($viewModel, $templateName));
+        $this->assertFalse(
+            $this->searchTemplates($viewModel, $templateName),
+            sprintf('Failed asserting that view model tree does not contain template "%s"', $templateName)
+        );
     }
 
     /**
@@ -820,8 +826,11 @@ abstract class AbstractControllerTestCase extends TestCase
         if ($viewModel->getTemplate($templateName) === $templateName) {
             return true;
         }
+
         foreach ($viewModel->getChildren() as $child) {
-            return $this->searchTemplates($child, $templateName);
+            if ($this->searchTemplates($child, $templateName)) {
+                return true;
+            }
         }
 
         return false;
