@@ -561,28 +561,36 @@ class AbstractControllerTestCaseTest extends AbstractHttpControllerTestCase
         $this->assertTemplateName('child2');
         $this->assertTemplateName('child3');
         $this->assertNotTemplateName('foo');
+    }
 
-        // Check that the test fails when template is NOT found where it was supposed to found
+    /**
+     * Check that the assertion fails when template is NOT found where it was supposed to found
+     */
+    public function testAssertTemplateNameFailsWhenNotFound(): void
+    {
+        $this->dispatch('/childview');
+
         try {
             $this->assertTemplateName('foo');
-            $receivedException = false;
-        } catch (Exception $exception) {
-            $receivedException = true;
+        } catch (ExpectationFailedException $exception) {
+            return;
         }
-        if (! $receivedException) {
-            $this->fail('Expected Exception not thrown');
-        }
+        $this->fail('Expected Exception not thrown');
+    }
 
-        // Check when template is found where it was NOT supposed to found
+    /**
+     * Check that the assertion fails when template is found where it was NOT supposed to found
+     */
+    public function testAssertNotTemplateNameFailsWhenFound(): void
+    {
+        $this->dispatch('/childview');
+
         try {
             $this->assertNotTemplateName('child1');
-            $receivedException = false;
-        } catch (Exception $exception) {
-            $receivedException = true;
+        } catch (ExpectationFailedException $exception) {
+            return;
         }
-        if (! $receivedException) {
-            $this->fail('Expected Exception not thrown');
-        }
+        $this->fail('Expected Exception not thrown');
     }
 
     public function testCustomResponseObject(): void
