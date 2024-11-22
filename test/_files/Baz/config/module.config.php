@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use Baz\Controller\IndexController;
+
 return [
     'router'       => [
         'routes' => [
@@ -122,7 +124,7 @@ return [
     ],
     'controllers'  => [
         'invokables' => [
-            'baz_index' => 'Baz\Controller\IndexController',
+            'baz_index' => IndexController::class,
         ],
     ],
     'view_manager' => [

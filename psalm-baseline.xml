@@ -9,9 +9,6 @@
     <InternalMethod>
       <code><![CDATA[getComparisonFailure]]></code>
     </InternalMethod>
-    <MixedArgument>
-      <code><![CDATA[$controllerManager->get($controllerIdentifier)]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$controllerIdentifier]]></code>
       <code><![CDATA[$controllerManager]]></code>
@@ -426,21 +423,10 @@
   </file>
   <file src="test/PHPUnit/Util/ModuleLoaderTest.php">
     <ArgumentTypeCoercion>
-      <code><![CDATA['Baz\Module']]></code>
-      <code><![CDATA['Baz\Module']]></code>
-      <code><![CDATA['Baz\Module']]></code>
-      <code><![CDATA['Baz\Module']]></code>
-      <code><![CDATA['Foo\Module']]></code>
-      <code><![CDATA['ModuleWithNamespace\TestModule\Module']]></code>
       <code><![CDATA['stdClass']]></code>
     </ArgumentTypeCoercion>
     <MixedAssignment>
-      <code><![CDATA[$baz]]></code>
-      <code><![CDATA[$baz]]></code>
-      <code><![CDATA[$baz]]></code>
-      <code><![CDATA[$baz]]></code>
       <code><![CDATA[$file]]></code>
-      <code><![CDATA[$foo]]></code>
       <code><![CDATA[$fooObject]]></code>
     </MixedAssignment>
     <PossiblyUnusedReturnValue>
@@ -448,9 +434,10 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="test/_files/Baz/Module.php">
-    <UnusedClass>
-      <code><![CDATA[Module]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[getAutoloaderConfig]]></code>
+      <code><![CDATA[getConfig]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/Baz/src/Baz/Controller/IndexController.php">
     <MixedAssignment>
@@ -468,6 +455,16 @@
       <code><![CDATA[['num_get' => $numGet, 'num_post' => $numPost]]]></code>
       <code><![CDATA[array<string, string>]]></code>
     </MixedReturnTypeCoercion>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[childViewAction]]></code>
+      <code><![CDATA[customResponseAction]]></code>
+      <code><![CDATA[exceptionAction]]></code>
+      <code><![CDATA[persistencetestAction]]></code>
+      <code><![CDATA[redirectAction]]></code>
+      <code><![CDATA[redirectToRouteAction]]></code>
+      <code><![CDATA[registerxpathnamespaceAction]]></code>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
     <UndefinedInterfaceMethod>
       <code><![CDATA[getHeaders]]></code>
       <code><![CDATA[getPost]]></code>
@@ -476,9 +473,6 @@
     <UndefinedMagicMethod>
       <code><![CDATA[flashMessenger]]></code>
     </UndefinedMagicMethod>
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithEvents/Module.php">
     <MissingClosureParamType>
@@ -502,9 +496,9 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/ModuleWithNamespace/TestModule/src/Controller/IndexController.php">
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/ModuleWithSimilarName/Test/Module.php">
     <UnusedClass>
@@ -512,9 +506,9 @@
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/Test/src/Controller/IndexController.php">
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/ModuleWithSimilarName/TestModule/Module.php">
     <UnusedClass>
@@ -522,9 +516,9 @@
     </UnusedClass>
   </file>
   <file src="test/_files/ModuleWithSimilarName/TestModule/src/Controller/IndexController.php">
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/Module.php">
     <UnusedClass>
@@ -532,18 +526,20 @@
     </UnusedClass>
   </file>
   <file src="test/_files/modules-path/with-subdir/Bar/src/Bar/Controller/IndexController.php">
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/Module.php">
-    <UnusedClass>
-      <code><![CDATA[Module]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[getAutoloaderConfig]]></code>
+      <code><![CDATA[getConfig]]></code>
+      <code><![CDATA[getServiceConfig]]></code>
+    </PossiblyUnusedMethod>
   </file>
   <file src="test/_files/modules-path/with-subdir/Foo/src/Foo/Controller/IndexController.php">
-    <UnusedClass>
-      <code><![CDATA[IndexController]]></code>
-    </UnusedClass>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[unittestsAction]]></code>
+    </PossiblyUnusedMethod>
   </file>
 </files>
