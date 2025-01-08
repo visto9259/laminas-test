@@ -376,7 +376,6 @@ abstract class AbstractControllerTestCase extends TestCase
     /**
      * Assert modules were loaded with the module manager
      *
-     * @param array $modules
      * @return void
      */
     public function assertModulesLoaded(array $modules)
@@ -396,7 +395,6 @@ abstract class AbstractControllerTestCase extends TestCase
     /**
      * Assert modules were not loaded with the module manager
      *
-     * @param array $modules
      * @return void
      */
     public function assertNotModulesLoaded(array $modules)
